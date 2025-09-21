@@ -123,13 +123,39 @@ npm run dev -- --host --port 5175
 
 ## 🎨 Design System
 
-The ecosystem follows a consistent design system with:
+The ecosystem follows a unified design system that celebrates African identity while maintaining modern usability standards.
 
 ### Color Palette
-- **Primary Gold**: #FFD700 (Afrivon brand color)
-- **Deep Navy**: #1A1B3A (Headers and primary text)
-- **Bright Blue**: #007BFF (Secondary actions)
-- **Dark Background**: #0F1419 (Main background)
+- **Primary Gold**: #FFD700 (Afrivon brand color, highlights, CTAs)
+- **Secondary Green**: #2E8B57 (African heritage, success indicators)
+- **Accent Orange**: #FF6B35 (Energy, warmth, call-to-actions)
+- **Deep Navy**: #1A1B3A (Professional depth, headers, navigation)
+- **Dark Background**: #0F1419 (Modern elegance, main background)
+- **Slate Cards**: #1E2A3A (Card backgrounds, panels)
+- **Muted Elements**: #2A3441 (Input fields, subtle elements)
+- **Text Muted**: #8B949E (Secondary text, descriptions)
+
+### Typography
+- **Font Family**: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif
+- **Headings**: Bold weights with gold accents for hierarchy
+- **Body Text**: Clean, readable with proper contrast ratios
+- **Interactive Elements**: Medium weight for buttons and navigation
+
+### Design Principles
+- **African-Inspired**: Subtle patterns and cultural color choices
+- **Modern & Clean**: Uncluttered interfaces with clear visual hierarchy
+- **Vibrant Accents**: Strategic use of gold, green, and orange
+- **Consistent Components**: Reusable UI elements with unified styling
+- **Engaging Interactions**: Subtle animations and hover effects
+- **Mobile-First**: Responsive design optimized for all devices
+
+### Component Styles
+- **Cards**: Dark backgrounds with gold borders, hover animations, backdrop blur
+- **Buttons**: Gradient backgrounds with lift effects on hover
+- **Badges**: Rounded corners with gradient backgrounds and scaling animations
+- **Inputs**: Dark styling with gold focus states
+- **Navigation**: Consistent hover states with gold highlights
+- **Progress Indicators**: Circular rings with brand colors
 - **Card Background**: #1E2A3A (Cards and panels)
 
 ### Typography
