@@ -89,6 +89,38 @@ npm run dev -- --host --port 5174
 # Access at http://localhost:5174
 ```
 
+### 3. Afrivon CareerKit (Identity Forge) ⭐ NEW
+**Location**: `apps/career-kit/afrivon-careerkit/`
+
+The professional document creation platform and primary source of TradePass profile data.
+
+**Key Features**:
+- Professional CV/Resume builder with real-time preview
+- Multiple African-inspired and professional templates
+- Skills management with trade-specific suggestions
+- Work experience and education tracking
+- AI-powered content suggestions
+- Multi-format export (PDF, Word, LinkedIn)
+- Profile completion tracking with progress indicators
+- Document sharing and collaboration
+
+**Unique Design Elements**:
+- African-inspired color scheme (Gold #FFD700, Green #2E8B57, Orange #FF6B35)
+- Floating animations and pulse effects
+- Custom gradient buttons and cards
+- Interactive skill badges
+- Real-time document canvas preview
+
+**Tech Stack**: React, Vite, Tailwind CSS, shadcn/ui, Lucide icons
+
+**Development Server**:
+```bash
+cd apps/career-kit/afrivon-careerkit
+npm install --legacy-peer-deps
+npm run dev -- --host --port 5175
+# Access at http://localhost:5175
+```
+
 ## 🎨 Design System
 
 The ecosystem follows a consistent design system with:

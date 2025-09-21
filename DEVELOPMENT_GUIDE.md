@@ -24,7 +24,7 @@ code .
 
 ### 3. Start Development Servers
 
-Open two terminals in VS Code:
+Open three terminals in VS Code:
 
 **Terminal 1 - Afrivon Connect:**
 ```bash
@@ -40,10 +40,18 @@ npm install --legacy-peer-deps
 npm run dev -- --host --port 5174
 ```
 
+**Terminal 3 - Afrivon CareerKit:**
+```bash
+cd apps/career-kit/afrivon-careerkit
+npm install --legacy-peer-deps
+npm run dev -- --host --port 5175
+```
+
 ### 4. Access Applications
 
 - **Afrivon Connect**: http://localhost:5173
 - **Afrivon HQ**: http://localhost:5174
+- **Afrivon CareerKit**: http://localhost:5175
 
 ## 🛠️ VS Code Configuration
 
@@ -108,6 +116,13 @@ Create `.vscode/launch.json` for debugging:
       "type": "chrome",
       "url": "http://localhost:5174",
       "webRoot": "${workspaceFolder}/apps/hq-web/afrivon-hq/src"
+    },
+    {
+      "name": "Launch Chrome - Afrivon CareerKit",
+      "request": "launch",
+      "type": "chrome",
+      "url": "http://localhost:5175",
+      "webRoot": "${workspaceFolder}/apps/career-kit/afrivon-careerkit/src"
     }
   ]
 }
@@ -129,7 +144,16 @@ afrivon-ecosystem/
 │   │   ├── public/                 # Static assets
 │   │   └── package.json            # Dependencies
 │   │
-│   └── hq-web/afrivon-hq/          # Admin dashboard
+│   ├── hq-web/afrivon-hq/          # Admin dashboard
+│   │   ├── src/
+│   │   │   ├── components/         # React components
+│   │   │   ├── hooks/              # Custom React hooks
+│   │   │   ├── lib/                # Utility functions
+│   │   │   └── App.jsx             # Main app component
+│   │   ├── public/                 # Static assets
+│   │   └── package.json            # Dependencies
+│   │
+│   └── career-kit/afrivon-careerkit/ # Professional document creation
 │       ├── src/
 │       │   ├── components/         # React components
 │       │   ├── hooks/              # Custom React hooks
@@ -145,7 +169,8 @@ afrivon-ecosystem/
 │
 └── .context/                       # Development context
     ├── Master-Ecosystem-PRD.md     # Product requirements
-    └── Design-System-Blueprint.md  # Design guidelines
+    ├── Design-System-Blueprint.md  # Design guidelines
+    └── CareerKit-Design-Concept.md # CareerKit specific design
 ```
 
 ## 🎨 Development Workflow
