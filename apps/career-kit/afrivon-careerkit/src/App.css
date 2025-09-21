@@ -1,0 +1,254 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.75rem;
+  --background: #0F1419;
+  --foreground: #FFFFFF;
+  --card: #1E2A3A;
+  --card-foreground: #FFFFFF;
+  --popover: #1E2A3A;
+  --popover-foreground: #FFFFFF;
+  --primary: #FFD700;
+  --primary-foreground: #1A1B3A;
+  --secondary: #2E8B57;
+  --secondary-foreground: #FFFFFF;
+  --muted: #2A3441;
+  --muted-foreground: #8B949E;
+  --accent: #FF6B35;
+  --accent-foreground: #FFFFFF;
+  --destructive: #DC3545;
+  --border: rgba(255, 255, 255, 0.1);
+  --input: #2A3441;
+  --ring: #FFD700;
+  --chart-1: #FFD700;
+  --chart-2: #2E8B57;
+  --chart-3: #FF6B35;
+  --chart-4: #007BFF;
+  --chart-5: #DC3545;
+  --sidebar: #1A1B3A;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #FFD700;
+  --sidebar-primary-foreground: #1A1B3A;
+  --sidebar-accent: #2E8B57;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: #FFD700;
+}
+
+.dark {
+  --background: #0F1419;
+  --foreground: #FFFFFF;
+  --card: #1E2A3A;
+  --card-foreground: #FFFFFF;
+  --popover: #1E2A3A;
+  --popover-foreground: #FFFFFF;
+  --primary: #FFD700;
+  --primary-foreground: #1A1B3A;
+  --secondary: #2E8B57;
+  --secondary-foreground: #FFFFFF;
+  --muted: #2A3441;
+  --muted-foreground: #8B949E;
+  --accent: #FF6B35;
+  --accent-foreground: #FFFFFF;
+  --destructive: #DC3545;
+  --border: rgba(255, 255, 255, 0.1);
+  --input: #2A3441;
+  --ring: #FFD700;
+  --chart-1: #FFD700;
+  --chart-2: #2E8B57;
+  --chart-3: #FF6B35;
+  --chart-4: #007BFF;
+  --chart-5: #DC3545;
+  --sidebar: #1A1B3A;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #FFD700;
+  --sidebar-primary-foreground: #1A1B3A;
+  --sidebar-accent: #2E8B57;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: #FFD700;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* CareerKit Custom Styles */
+.careerkit-gradient {
+  background: linear-gradient(135deg, #FFD700 0%, #2E8B57 50%, #FF6B35 100%);
+}
+
+.careerkit-card {
+  background: #1E2A3A;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.careerkit-button-primary {
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  color: #1A1B3A;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.careerkit-button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+}
+
+.careerkit-button-secondary {
+  background: linear-gradient(135deg, #2E8B57 0%, #228B22 100%);
+  color: #FFFFFF;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(46, 139, 87, 0.3);
+}
+
+.careerkit-button-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(46, 139, 87, 0.4);
+}
+
+.template-card {
+  background: linear-gradient(135deg, #1E2A3A 0%, #2A3441 100%);
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.template-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #FFD700, #2E8B57, #FF6B35);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.template-card:hover {
+  transform: translateY(-4px);
+  border-color: #FFD700;
+  box-shadow: 0 12px 40px rgba(255, 215, 0, 0.2);
+}
+
+.template-card:hover::before {
+  opacity: 0.1;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.progress-ring-circle {
+  stroke-dasharray: 251.2;
+  stroke-dashoffset: 251.2;
+  transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+.document-canvas {
+  background: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.african-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(46, 139, 87, 0.1) 0%, transparent 50%);
+}
+
+.skill-badge {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(46, 139, 87, 0.2) 100%);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.skill-badge:hover {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.3) 0%, rgba(46, 139, 87, 0.3) 100%);
+  transform: scale(1.05);
+}
+
+.floating-element {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulse-glow {
+  from { box-shadow: 0 0 20px rgba(255, 215, 0, 0.3); }
+  to { box-shadow: 0 0 30px rgba(255, 215, 0, 0.6); }
+}
