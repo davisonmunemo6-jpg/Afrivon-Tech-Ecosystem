@@ -43,71 +43,83 @@
 
 :root {
   --radius: 0.75rem;
-  --background: #0F1419;
+  
+  /* Afrivon Brand Colors */
+  --afrivon-gold: #FFD700;
+  --afrivon-green: #2E8B57;
+  --afrivon-orange: #FF6B35;
+  --afrivon-navy: #1A1B3A;
+  --afrivon-dark: #0F1419;
+  --afrivon-slate: #1E2A3A;
+  --afrivon-muted: #2A3441;
+  --afrivon-text-muted: #8B949E;
+  
+  /* Theme Variables */
+  --background: var(--afrivon-dark);
   --foreground: #FFFFFF;
-  --card: #1E2A3A;
+  --card: var(--afrivon-slate);
   --card-foreground: #FFFFFF;
-  --popover: #1E2A3A;
+  --popover: var(--afrivon-slate);
   --popover-foreground: #FFFFFF;
-  --primary: #FFD700;
-  --primary-foreground: #1A1B3A;
-  --secondary: #007BFF;
+  --primary: var(--afrivon-gold);
+  --primary-foreground: var(--afrivon-navy);
+  --secondary: var(--afrivon-green);
   --secondary-foreground: #FFFFFF;
-  --muted: #2A3441;
-  --muted-foreground: #8B949E;
-  --accent: #FFD700;
-  --accent-foreground: #1A1B3A;
+  --muted: var(--afrivon-muted);
+  --muted-foreground: var(--afrivon-text-muted);
+  --accent: var(--afrivon-orange);
+  --accent-foreground: #FFFFFF;
   --destructive: #DC3545;
   --border: rgba(255, 255, 255, 0.1);
-  --input: #2A3441;
-  --ring: #FFD700;
-  --chart-1: #FFD700;
-  --chart-2: #007BFF;
-  --chart-3: #28A745;
-  --chart-4: #FFC107;
+  --input: var(--afrivon-muted);
+  --ring: var(--afrivon-gold);
+  --chart-1: var(--afrivon-gold);
+  --chart-2: var(--afrivon-green);
+  --chart-3: var(--afrivon-orange);
+  --chart-4: #007BFF;
   --chart-5: #DC3545;
-  --sidebar: #1A1B3A;
+  --sidebar: var(--afrivon-navy);
   --sidebar-foreground: #FFFFFF;
-  --sidebar-primary: #FFD700;
-  --sidebar-primary-foreground: #1A1B3A;
-  --sidebar-accent: #007BFF;
+  --sidebar-primary: var(--afrivon-gold);
+  --sidebar-primary-foreground: var(--afrivon-navy);
+  --sidebar-accent: var(--afrivon-green);
   --sidebar-accent-foreground: #FFFFFF;
   --sidebar-border: rgba(255, 255, 255, 0.1);
-  --sidebar-ring: #FFD700;
+  --sidebar-ring: var(--afrivon-gold);
 }
 
 .dark {
-  --background: #0F1419;
+  --background: var(--afrivon-dark);
   --foreground: #FFFFFF;
-  --card: #1E2A3A;
+  --card: var(--afrivon-slate);
   --card-foreground: #FFFFFF;
-  --popover: #1E2A3A;
+  --popover: var(--afrivon-slate);
   --popover-foreground: #FFFFFF;
-  --primary: #FFD700;
-  --primary-foreground: #1A1B3A;
-  --secondary: #007BFF;
+  --primary: var(--afrivon-gold);
+  --primary-foreground: var(--afrivon-navy);
+  --secondary: var(--afrivon-green);
   --secondary-foreground: #FFFFFF;
-  --muted: #2A3441;
-  --muted-foreground: #8B949E;
-  --accent: #FFD700;
-  --accent-foreground: #1A1B3A;
+  --muted: var(--afrivon-muted);
+  --muted-foreground: var(--afrivon-text-muted);
+  --accent: var(--afrivon-orange);
+  --accent-foreground: #FFFFFF;
   --destructive: #DC3545;
   --border: rgba(255, 255, 255, 0.1);
-  --input: #2A3441;
-  --ring: #FFD700;
-  --chart-1: #FFD700;
-  --chart-2: #007BFF;
-  --chart-3: #28A745;
-  --chart-4: #FFC107;
+  --input: var(--afrivon-muted);
+  --ring: var(--afrivon-gold);
+  --chart-1: var(--afrivon-gold);
+  --chart-2: var(--afrivon-green);
+  --chart-3: var(--afrivon-orange);
+  --chart-4: #007BFF;
   --chart-5: #DC3545;
-  --sidebar: #1A1B3A;
+  --sidebar: var(--afrivon-navy);
   --sidebar-foreground: #FFFFFF;
-  --sidebar-primary: #FFD700;
-  --sidebar-primary-foreground: #1A1B3A;
-  --sidebar-accent: #007BFF;
+  --sidebar-primary: var(--afrivon-gold);
+  --sidebar-primary-foreground: var(--afrivon-navy);
+  --sidebar-accent: var(--afrivon-green);
   --sidebar-accent-foreground: #FFFFFF;
   --sidebar-border: rgba(255, 255, 255, 0.1);
-  --sidebar-ring: #FFD700;
+  --sidebar-ring: var(--afrivon-gold);
 }
 
 @layer base {
@@ -120,53 +132,258 @@
   }
 }
 
-/* Custom Afrivon HQ styles */
-.afrivon-gradient {
-  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+/* Afrivon HQ Specific Styles */
+.hq-gradient {
+  background: linear-gradient(135deg, var(--afrivon-gold) 0%, var(--afrivon-green) 50%, var(--afrivon-orange) 100%);
 }
 
-.afrivon-card {
-  background: #1E2A3A;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.afrivon-button-primary {
-  background: #FFD700;
-  color: #1A1B3A;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 0.2s ease-in-out;
-}
-
-.afrivon-button-primary:hover {
-  transform: scale(1.05);
-  filter: brightness(1.1);
-}
-
-.afrivon-button-secondary {
-  background: #007BFF;
-  color: #FFFFFF;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 0.2s ease-in-out;
-}
-
-.afrivon-button-secondary:hover {
-  transform: scale(1.05);
-  filter: brightness(1.1);
-}
-
-.metric-card {
-  background: linear-gradient(135deg, #1E2A3A 0%, #2A3441 100%);
+.hq-card {
+  background: var(--afrivon-slate);
   border: 1px solid rgba(255, 215, 0, 0.2);
-  border-radius: 12px;
-  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
-.metric-card:hover {
+.hq-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.15);
+  box-shadow: 0 12px 40px rgba(255, 215, 0, 0.2);
+  border-color: var(--afrivon-gold);
 }
+
+.hq-button-primary {
+  background: linear-gradient(135deg, var(--afrivon-gold) 0%, #FFA500 100%);
+  color: var(--afrivon-navy);
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+  border: none;
+  padding: 0.75rem 1.5rem;
+}
+
+.hq-button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+}
+
+.hq-button-secondary {
+  background: linear-gradient(135deg, var(--afrivon-green) 0%, #228B22 100%);
+  color: #FFFFFF;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(46, 139, 87, 0.3);
+  border: none;
+  padding: 0.75rem 1.5rem;
+}
+
+.hq-button-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(46, 139, 87, 0.4);
+}
+
+.hq-button-danger {
+  background: linear-gradient(135deg, #DC3545 0%, #C82333 100%);
+  color: #FFFFFF;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+  border: none;
+  padding: 0.75rem 1.5rem;
+}
+
+.hq-button-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(220, 53, 69, 0.4);
+}
+
+.hq-nav-link {
+  color: var(--afrivon-text-muted);
+  transition: all 0.3s ease;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.hq-nav-link:hover {
+  color: var(--afrivon-gold);
+  background: rgba(255, 215, 0, 0.1);
+}
+
+.hq-nav-link.active {
+  color: var(--afrivon-gold);
+  background: rgba(255, 215, 0, 0.2);
+}
+
+.hq-header {
+  background: var(--afrivon-navy);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.hq-sidebar {
+  background: var(--afrivon-navy);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hq-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(46, 139, 87, 0.1) 0%, transparent 50%);
+}
+
+.hq-input {
+  background: var(--afrivon-muted);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #FFFFFF;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.hq-input:focus {
+  border-color: var(--afrivon-gold);
+  box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.2);
+  outline: none;
+}
+
+.hq-badge {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(46, 139, 87, 0.2) 100%);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.hq-badge:hover {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.3) 0%, rgba(46, 139, 87, 0.3) 100%);
+  transform: scale(1.05);
+}
+
+.hq-badge-success {
+  background: linear-gradient(135deg, rgba(46, 139, 87, 0.2) 0%, rgba(34, 139, 34, 0.2) 100%);
+  border: 1px solid rgba(46, 139, 87, 0.3);
+  color: #2E8B57;
+}
+
+.hq-badge-warning {
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.2) 0%, rgba(255, 69, 0, 0.2) 100%);
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  color: #FF6B35;
+}
+
+.hq-badge-danger {
+  background: linear-gradient(135deg, rgba(220, 53, 69, 0.2) 0%, rgba(200, 35, 51, 0.2) 100%);
+  border: 1px solid rgba(220, 53, 69, 0.3);
+  color: #DC3545;
+}
+
+.hq-tab {
+  background: transparent;
+  color: var(--afrivon-text-muted);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  border: none;
+  font-weight: 500;
+}
+
+.hq-tab:hover {
+  color: var(--afrivon-gold);
+  background: rgba(255, 215, 0, 0.1);
+}
+
+.hq-tab.active {
+  color: var(--afrivon-navy);
+  background: var(--afrivon-gold);
+}
+
+.hq-metric-card {
+  background: var(--afrivon-slate);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.hq-metric-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--afrivon-gold) 0%, var(--afrivon-green) 50%, var(--afrivon-orange) 100%);
+}
+
+.hq-metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(255, 215, 0, 0.2);
+  border-color: var(--afrivon-gold);
+}
+
+.hq-floating {
+  animation: hq-float 6s ease-in-out infinite;
+}
+
+@keyframes hq-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.hq-pulse {
+  animation: hq-pulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes hq-pulse {
+  from { box-shadow: 0 0 15px rgba(255, 215, 0, 0.3); }
+  to { box-shadow: 0 0 25px rgba(255, 215, 0, 0.6); }
+}
+
+.hq-chart-container {
+  background: var(--afrivon-slate);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.hq-table {
+  background: var(--afrivon-slate);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.hq-table-header {
+  background: var(--afrivon-navy);
+  color: var(--afrivon-gold);
+  font-weight: 600;
+}
+
+.hq-table-row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.hq-table-row:hover {
+  background: rgba(255, 215, 0, 0.05);
+}
+
+.hq-status-online {
+  color: var(--afrivon-green);
+}
+
+.hq-status-offline {
+  color: var(--afrivon-text-muted);
+}
+
+.hq-status-pending {
+  color: var(--afrivon-orange);
+}
+

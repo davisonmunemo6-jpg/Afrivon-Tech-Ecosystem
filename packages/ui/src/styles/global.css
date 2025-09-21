@@ -1,3 +1,4 @@
+/* Afrivon Ecosystem Global Styles */
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -132,12 +133,27 @@
   }
 }
 
-/* CareerKit Specific Styles */
-.careerkit-gradient {
+/* Afrivon Ecosystem Component Styles */
+
+/* Gradient Backgrounds */
+.afrivon-gradient {
   background: linear-gradient(135deg, var(--afrivon-gold) 0%, var(--afrivon-green) 50%, var(--afrivon-orange) 100%);
 }
 
-.careerkit-card {
+.afrivon-gradient-primary {
+  background: linear-gradient(135deg, var(--afrivon-gold) 0%, #FFA500 100%);
+}
+
+.afrivon-gradient-secondary {
+  background: linear-gradient(135deg, var(--afrivon-green) 0%, #228B22 100%);
+}
+
+.afrivon-gradient-accent {
+  background: linear-gradient(135deg, var(--afrivon-orange) 0%, #FF4500 100%);
+}
+
+/* Card Styles */
+.afrivon-card {
   background: var(--afrivon-slate);
   border: 1px solid rgba(255, 215, 0, 0.2);
   border-radius: 16px;
@@ -146,13 +162,14 @@
   transition: all 0.3s ease;
 }
 
-.careerkit-card:hover {
+.afrivon-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 40px rgba(255, 215, 0, 0.2);
   border-color: var(--afrivon-gold);
 }
 
-.careerkit-button-primary {
+/* Button Styles */
+.afrivon-button-primary {
   background: linear-gradient(135deg, var(--afrivon-gold) 0%, #FFA500 100%);
   color: var(--afrivon-navy);
   border-radius: 12px;
@@ -163,12 +180,12 @@
   padding: 0.75rem 1.5rem;
 }
 
-.careerkit-button-primary:hover {
+.afrivon-button-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
 }
 
-.careerkit-button-secondary {
+.afrivon-button-secondary {
   background: linear-gradient(135deg, var(--afrivon-green) 0%, #228B22 100%);
   color: #FFFFFF;
   border-radius: 12px;
@@ -179,12 +196,12 @@
   padding: 0.75rem 1.5rem;
 }
 
-.careerkit-button-secondary:hover {
+.afrivon-button-secondary:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(46, 139, 87, 0.4);
 }
 
-.careerkit-button-accent {
+.afrivon-button-accent {
   background: linear-gradient(135deg, var(--afrivon-orange) 0%, #FF4500 100%);
   color: #FFFFFF;
   border-radius: 12px;
@@ -195,62 +212,30 @@
   padding: 0.75rem 1.5rem;
 }
 
-.careerkit-button-accent:hover {
+.afrivon-button-accent:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
 }
 
-.careerkit-nav-link {
-  color: var(--afrivon-text-muted);
-  transition: all 0.3s ease;
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
-  font-weight: 500;
-}
-
-.careerkit-nav-link:hover {
+.afrivon-button-outline {
+  background: transparent;
   color: var(--afrivon-gold);
-  background: rgba(255, 215, 0, 0.1);
-}
-
-.careerkit-nav-link.active {
-  color: var(--afrivon-gold);
-  background: rgba(255, 215, 0, 0.2);
-}
-
-.careerkit-header {
-  background: var(--afrivon-navy);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-}
-
-.careerkit-sidebar {
-  background: var(--afrivon-navy);
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.careerkit-pattern {
-  background-image: 
-    radial-gradient(circle at 25% 25%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(46, 139, 87, 0.1) 0%, transparent 50%);
-}
-
-.careerkit-input {
-  background: var(--afrivon-muted);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  color: #FFFFFF;
-  padding: 0.75rem 1rem;
+  border: 2px solid var(--afrivon-gold);
+  border-radius: 12px;
+  font-weight: 600;
   transition: all 0.3s ease;
+  padding: 0.75rem 1.5rem;
 }
 
-.careerkit-input:focus {
-  border-color: var(--afrivon-gold);
-  box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.2);
-  outline: none;
+.afrivon-button-outline:hover {
+  background: var(--afrivon-gold);
+  color: var(--afrivon-navy);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
 }
 
-.skill-badge {
+/* Badge Styles */
+.afrivon-badge {
   background: linear-gradient(135deg, rgba(255, 215, 0, 0.2) 0%, rgba(46, 139, 87, 0.2) 100%);
   border: 1px solid rgba(255, 215, 0, 0.3);
   border-radius: 20px;
@@ -260,15 +245,105 @@
   transition: all 0.2s ease;
   display: inline-flex;
   align-items: center;
-  margin: 0.25rem;
 }
 
-.skill-badge:hover {
+.afrivon-badge:hover {
   background: linear-gradient(135deg, rgba(255, 215, 0, 0.3) 0%, rgba(46, 139, 87, 0.3) 100%);
   transform: scale(1.05);
 }
 
-.careerkit-tab {
+/* Progress Ring */
+.afrivon-progress-ring {
+  transform: rotate(-90deg);
+}
+
+.afrivon-progress-ring-circle {
+  stroke-dasharray: 251.2;
+  stroke-dashoffset: 251.2;
+  transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+/* Input Styles */
+.afrivon-input {
+  background: var(--afrivon-muted);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #FFFFFF;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.afrivon-input:focus {
+  border-color: var(--afrivon-gold);
+  box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.2);
+  outline: none;
+}
+
+/* Header Styles */
+.afrivon-header {
+  background: var(--afrivon-navy);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Navigation Styles */
+.afrivon-nav-link {
+  color: var(--afrivon-text-muted);
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.afrivon-nav-link:hover {
+  color: var(--afrivon-gold);
+  background: rgba(255, 215, 0, 0.1);
+}
+
+.afrivon-nav-link.active {
+  color: var(--afrivon-gold);
+  background: rgba(255, 215, 0, 0.2);
+}
+
+/* African Pattern Background */
+.afrivon-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(46, 139, 87, 0.1) 0%, transparent 50%);
+}
+
+/* Animations */
+.afrivon-float {
+  animation: afrivon-float 6s ease-in-out infinite;
+}
+
+@keyframes afrivon-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.afrivon-pulse-glow {
+  animation: afrivon-pulse-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes afrivon-pulse-glow {
+  from { box-shadow: 0 0 20px rgba(255, 215, 0, 0.3); }
+  to { box-shadow: 0 0 30px rgba(255, 215, 0, 0.6); }
+}
+
+/* Sidebar Styles */
+.afrivon-sidebar {
+  background: var(--afrivon-navy);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Tab Styles */
+.afrivon-tabs {
+  background: var(--afrivon-slate);
+  border-radius: 12px;
+  padding: 0.25rem;
+}
+
+.afrivon-tab {
   background: transparent;
   color: var(--afrivon-text-muted);
   border-radius: 8px;
@@ -278,209 +353,43 @@
   font-weight: 500;
 }
 
-.careerkit-tab:hover {
+.afrivon-tab:hover {
   color: var(--afrivon-gold);
   background: rgba(255, 215, 0, 0.1);
 }
 
-.careerkit-tab.active {
+.afrivon-tab.active {
   color: var(--afrivon-navy);
   background: var(--afrivon-gold);
 }
 
-.careerkit-floating {
-  animation: careerkit-float 6s ease-in-out infinite;
+/* Utility Classes */
+.afrivon-text-gradient {
+  background: linear-gradient(135deg, var(--afrivon-gold) 0%, var(--afrivon-green) 50%, var(--afrivon-orange) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@keyframes careerkit-float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-
-.careerkit-pulse-glow {
-  animation: careerkit-pulse-glow 2s ease-in-out infinite alternate;
-}
-
-@keyframes careerkit-pulse-glow {
-  from { box-shadow: 0 0 20px rgba(255, 215, 0, 0.3); }
-  to { box-shadow: 0 0 30px rgba(255, 215, 0, 0.6); }
-}
-
-.careerkit-progress-ring {
-  transform: rotate(-90deg);
-}
-
-.careerkit-progress-ring-circle {
-  stroke-dasharray: 251.2;
-  stroke-dashoffset: 251.2;
-  transition: stroke-dashoffset 0.5s ease-in-out;
-}
-
-.careerkit-document-canvas {
-  background: #FFFFFF;
-  border-radius: 8px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  min-height: 600px;
-  padding: 2rem;
-  color: #000000;
-  font-family: 'Times New Roman', serif;
-}
-
-.careerkit-template-card {
-  background: var(--afrivon-slate);
-  border: 2px solid rgba(255, 215, 0, 0.2);
-  border-radius: 16px;
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  text-align: center;
-}
-
-.careerkit-template-card:hover {
-  border-color: var(--afrivon-gold);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(255, 215, 0, 0.3);
-}
-
-.careerkit-template-card.selected {
-  border-color: var(--afrivon-gold);
-  background: rgba(255, 215, 0, 0.1);
-}
-
-.careerkit-ai-assistant {
-  background: var(--afrivon-slate);
-  border: 1px solid rgba(255, 215, 0, 0.3);
-  border-radius: 16px;
-  padding: 1rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.careerkit-ai-assistant::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(45deg, var(--afrivon-gold), var(--afrivon-green), var(--afrivon-orange), var(--afrivon-gold));
-  border-radius: 16px;
-  z-index: -1;
-  animation: careerkit-border-glow 3s linear infinite;
-}
-
-@keyframes careerkit-border-glow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.careerkit-quick-action {
-  background: var(--afrivon-slate);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 1rem;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  text-align: center;
-}
-
-.careerkit-quick-action:hover {
-  border-color: var(--afrivon-gold);
-  background: rgba(255, 215, 0, 0.05);
-  transform: translateY(-2px);
-}
-
-.careerkit-document-type {
-  background: var(--afrivon-slate);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.careerkit-document-type:hover {
-  border-color: var(--afrivon-gold);
-  background: rgba(255, 215, 0, 0.05);
-  transform: translateY(-2px);
-}
-
-.careerkit-form-section {
-  background: var(--afrivon-slate);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.careerkit-form-section h3 {
-  color: var(--afrivon-gold);
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.careerkit-experience-item {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.careerkit-add-button {
-  background: transparent;
-  border: 2px dashed rgba(255, 215, 0, 0.5);
-  border-radius: 8px;
-  padding: 1rem;
-  color: var(--afrivon-gold);
-  transition: all 0.3s ease;
-  cursor: pointer;
-  text-align: center;
-  width: 100%;
-}
-
-.careerkit-add-button:hover {
-  border-color: var(--afrivon-gold);
-  background: rgba(255, 215, 0, 0.05);
-}
-
-/* African Pattern Overlay */
-.careerkit-african-pattern {
-  background-image: 
-    repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 10px,
-      rgba(255, 215, 0, 0.03) 10px,
-      rgba(255, 215, 0, 0.03) 20px
-    ),
-    repeating-linear-gradient(
-      -45deg,
-      transparent,
-      transparent 10px,
-      rgba(46, 139, 87, 0.03) 10px,
-      rgba(46, 139, 87, 0.03) 20px
-    );
+.afrivon-border-gradient {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--afrivon-slate), var(--afrivon-slate)) padding-box,
+              linear-gradient(135deg, var(--afrivon-gold), var(--afrivon-green), var(--afrivon-orange)) border-box;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .careerkit-card {
+  .afrivon-card {
     border-radius: 12px;
     margin: 0.5rem;
   }
   
-  .careerkit-button-primary,
-  .careerkit-button-secondary,
-  .careerkit-button-accent {
+  .afrivon-button-primary,
+  .afrivon-button-secondary,
+  .afrivon-button-accent,
+  .afrivon-button-outline {
     padding: 0.625rem 1.25rem;
     font-size: 0.875rem;
-  }
-  
-  .careerkit-document-canvas {
-    padding: 1rem;
-    min-height: 400px;
   }
 }
 

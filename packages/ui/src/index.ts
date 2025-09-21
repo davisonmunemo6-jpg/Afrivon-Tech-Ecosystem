@@ -7,3 +7,6 @@ export { CareerKitLogo } from './components/CareerKitLogo';
 export { ProgressRing } from './components/ProgressRing';
 export { SkillBadge } from './components/SkillBadge';
 
+// Global styles
+export './styles/global.css';
+
